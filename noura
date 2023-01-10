@@ -1,1 +1,20 @@
+$ git branch
+* main
+$ git add Reports/AnonymousStudent.md
+$ git commit -m "<任意のコミットメッセージ>"
+$ git push
+$ git branch AnonymousStudent
+$ git checkout AnonymousStudent
+$ git add DesignPattern.md
+$ git commit -m "<コミットメッセージ>"
+$ git push -u origin AnonymousStudent
+$ git checkout main
+$ git pull
+$ git merge AnonymousStudent
+Auto-merging DesignPattern.md
+CONFLICT (content): Merge conflict in DesignPattern.md
+Automatic merge failed; fix conflicts and then commit the result.
+$ git add DesignPattern.md
+$ git commit -m "<コミットメッセージ>"
+$ git push
 
